@@ -8,77 +8,78 @@ const CONTENT = {
   personal: {
     name: "Nick Evans",
     role: "MSci Computer Science @ Royal Holloway | Cybersecurity & OSINT",
-    bio: "Currently a first year MSci Computer Science with Cyber Security at Royal Holloway, University of London. Looking to compete in more CTF challenges and build home lab projects, passionate about threat detection and protection.",
+    bio: "First-year MSci Computer Science student at Royal Holloway. I specialize in OSINT and Geolocation, blending competitive gaming skills with cybersecurity tradecraft. Creator of Geonections and former Top 10 UK GeoGuessr player.",
     email: "contact@nickevans.dev", // Update with your real email
     socials: {
       github: "https://github.com/NickEvans4130",
       linkedin: "https://www.linkedin.com/in/nick-evans-893593243/",
-      twitter: "https://x.com/NickEvansCS"
+      twitter: "https://x.com/NickEvansOSINT" // Updated to the handle we discussed
     }
   },
   
   // Skills Matrix
   skills: [
     { 
-      category: "Security", 
-      items: ["Threat Detection", "OSINT", "Network Security", "Incident Response"] 
+      category: "OSINT & Recon", 
+      items: ["Geolocation", "IMINT (Image Intelligence)", "Public Records", "Social Media Investigation"] 
     },
     { 
-      category: "Languages", 
-      items: ["Python", "JavaScript", "Bash", "SQL"] 
+      category: "Technical Security", 
+      items: ["Network Traffic Analysis", "Web App Security (OWASP)", "Linux Command Line", "CTF Methodologies"] 
     },
     { 
-      category: "Tools", 
-      items: ["Wireshark", "Nmap", "Burp Suite", "Metasploit"] 
+      category: "Development", 
+      items: ["Python", "JavaScript", "HTML/CSS", "React/Node.js"] 
     },
     { 
-      category: "Platforms", 
-      items: ["Linux", "Windows", "Docker", "Git"] 
+      category: "Soft Skills", 
+      items: ["Team Leadership", "Problem Solving", "Technical Writing", "Project Management"] 
     }
   ],
   
-  // CTF Platform Statistics
+  // CTF & Competitive Statistics
   ctfStats: {
     platforms: [
       {
+        name: "GeoGuessr (UK)",
+        rank: "#7 Peak",
+        highlight: "Competitive",
+        detail: "Top 10 UK Ranking",
+        profileUrl: "#", 
+        color: "text-yellow-400"
+      },
+      {
+        name: "BAE Systems CTF",
+        rank: "Winner",
+        highlight: "1st Place",
+        detail: "Capture The Flag",
+        profileUrl: "#", 
+        color: "text-red-500"
+      },
+      {
         name: "TryHackMe",
-        rank: "Beginner",
-        roomsCompleted: 12,
-        streak: 5,
-        profileUrl: "https://tryhackme.com/p/YourUsername", // Update with your profile
-        color: "text-red-400"
-      },
-      {
-        name: "HackTheBox",
-        rank: "Script Kiddie",
-        boxesPwned: 3,
-        challenges: 8,
-        profileUrl: "https://app.hackthebox.com/profile/YourID", // Update with your profile
+        rank: "Top 10%",
+        roomsCompleted: 15,
+        streak: 12,
+        profileUrl: "https://tryhackme.com/p/YourUsername", 
         color: "text-green-400"
-      },
-      {
-        name: "PicoCTF",
-        points: 1250,
-        solved: 15,
-        profileUrl: "https://play.picoctf.org/users/YourUsername", // Update with your profile
-        color: "text-blue-400"
       }
     ],
     recentAchievements: [
       { 
-        title: "Completed Advent of Cyber 2024", 
-        platform: "TryHackMe", 
-        date: "2024-12-25" 
+        title: "1st Place - BAE Systems CTF", 
+        platform: "Competition", 
+        date: "2024-11-20" 
       },
       { 
-        title: "First Root on HTB", 
-        platform: "HackTheBox", 
-        date: "2025-01-10" 
+        title: "Geonections Feature by Rainbolt", 
+        platform: "Community", 
+        date: "2024-10-15" 
       },
       { 
-        title: "Top 10% in PicoCTF", 
-        platform: "PicoCTF", 
-        date: "2024-11-15" 
+        title: "Homeland Security Certification", 
+        platform: "Certification", 
+        date: "2024-09-01" 
       }
     ]
   },
@@ -87,99 +88,67 @@ const CONTENT = {
   projects: [
     {
       id: 1,
-      title: "Network Traffic Analyzer",
-      description: "Python-based packet analysis tool for detecting anomalies in network traffic patterns.",
-      tech: ["Python", "Scapy", "Pandas"],
-      github: "https://github.com/NickEvans4130/network-analyzer",
-      status: "In Progress"
+      title: "Geonections.com",
+      description: "A viral geolocation puzzle game widely adopted by the GeoGuessr community. Featured by content creators like Rainbolt, Zi8gzag, and Chicago Geographer.",
+      tech: ["JavaScript", "Web Development", "Google Maps API"],
+      github: "https://geonections.com/", // Linking to live site
+      status: "Live"
     },
     {
       id: 2,
-      title: "CTF Toolkit",
-      description: "Collection of scripts and utilities for common CTF challenges including crypto, forensics, and web exploitation.",
-      tech: ["Python", "Bash", "Docker"],
-      github: "https://github.com/NickEvans4130/ctf-toolkit",
-      status: "Active"
+      title: "Python Port Scanner",
+      description: "A custom command-line tool for network reconnaissance, capable of identifying open ports and service versions on target IP ranges.",
+      tech: ["Python", "Socket Programming", "Networking"],
+      github: "https://github.com/NickEvans4130/port-scanner", // Placeholder link
+      status: "Completed"
+    },
+    {
+      id: 3,
+      title: "Cisco Work Experience Project",
+      description: "Assisted with enterprise network projects during a placement at Cisco, gaining practical exposure to corporate network environments.",
+      tech: ["Networking", "Enterprise Infrastructure", "Corporate Security"],
+      github: "#",
+      status: "Completed"
     }
-    // Add more projects here
   ],
   
   // Blog Posts & Write-ups
   blogPosts: [
     {
       id: 1,
-      title: "Getting Started with Home Lab Setup",
-      date: "2025-01-15",
-      excerpt: "A beginner's guide to setting up your first cybersecurity home lab using VirtualBox and Kali Linux.",
-      tags: ["Home Lab", "Tutorial", "Beginner"],
-      readTime: "8 min",
-      link: "#" // Add link when post is published
+      title: "Breaking Down the 'Just Deploy It' CTF Challenge",
+      date: "2024-11-25",
+      excerpt: "A deep dive into how I exploited a Django Debug Mode misconfiguration to reveal secret keys and win points in the BAE Systems CTF.",
+      tags: ["CTF Write-up", "Web Security", "Django"],
+      readTime: "6 min",
+      link: "#" 
     },
     {
       id: 2,
-      title: "TryHackMe: Blue Room Walkthrough",
-      date: "2025-01-10",
-      excerpt: "Complete walkthrough of the Blue room on TryHackMe, covering EternalBlue exploitation and Windows privilege escalation.",
-      tags: ["CTF", "Windows", "Exploitation"],
-      readTime: "12 min",
-      link: "#" // Add link when post is published
+      title: "Key Takeaways from OWASP London Chapter",
+      date: "2024-11-10",
+      excerpt: "Insights on the latest web vulnerabilities discuss at the recent OWASP London meetup and how they apply to modern dev-sec-ops.",
+      tags: ["Events", "Networking", "OWASP"],
+      readTime: "4 min",
+      link: "#" 
+    },
+    {
+      id: 3,
+      title: "Geolocation Case Study: Finding the Unfindable",
+      date: "2024-10-30",
+      excerpt: "A step-by-step walkthrough of how I used sun analysis and infrastructure markers to pinpoint a location in rural Brazil.",
+      tags: ["OSINT", "Geolocation", "Case Study"],
+      readTime: "8 min",
+      link: "#" 
+    },
+    {
+      id: 4,
+      title: "From eSwatini to Cyber: Lessons in Leadership",
+      date: "2024-09-15",
+      excerpt: "Reflecting on my World Challenge volunteer trip and how managing team dynamics in high-pressure environments translates to Incident Response.",
+      tags: ["Soft Skills", "Leadership", "Personal"],
+      readTime: "5 min",
+      link: "#" 
     }
-    // Add more blog posts here
   ]
 };
-
-// ============================================
-// HOW TO UPDATE YOUR PORTFOLIO:
-// ============================================
-
-/*
-
-1. ADD A NEW PROJECT:
-   Copy this template and add it to the projects array:
-
-   {
-     id: 3,
-     title: "SIEM Home Lab",
-     description: "Built a Security Information and Event Management system using Splunk and Sysmon.",
-     tech: ["Splunk", "Sysmon", "Windows"],
-     github: "https://github.com/NickEvans4130/siem-lab",
-     status: "Completed"
-   }
-
-2. ADD A NEW BLOG POST:
-   Copy this template and add it to the blogPosts array:
-
-   {
-     id: 3,
-     title: "OSINT Techniques for Cybersecurity",
-     date: "2025-02-01",
-     excerpt: "Exploring open-source intelligence gathering methods...",
-     tags: ["OSINT", "Investigation", "Tools"],
-     readTime: "10 min",
-     link: "https://yourblog.com/osint-techniques"
-   }
-
-3. UPDATE CTF STATS:
-   Simply change the numbers in the ctfStats section:
-   - roomsCompleted: 15
-   - boxesPwned: 5
-   - etc.
-
-4. ADD NEW SKILLS:
-   Add items to any category or create a new category:
-
-   {
-     category: "Cloud",
-     items: ["AWS", "Azure", "GCP"]
-   }
-
-5. ADD CTF ACHIEVEMENTS:
-   Add to the recentAchievements array:
-
-   {
-     title: "Completed OWASP Top 10 Path",
-     platform: "TryHackMe",
-     date: "2025-02-01"
-   }
-
-*/
